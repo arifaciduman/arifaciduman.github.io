@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.sidenav{
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top*/
+  left: 0;
+  background-color: peachpuff;
+  overflow-x: hidden; /* disable horizontal scroll*/
+  padding-top: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  border-width: 5px;
+  border-color: cornflowerblue;
+}
+
+.sidenav a{
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  color: mediumseagreen;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #6495ed;
+}
+
+.main{
+  margin-left: 180px; /* Same as sidebar width */
+  padding: 0px 10px;
+  padding-top: 20px;
+  font-family: 'Nunito', sans-serif;
+
+  background: url("images/sitebg.png") no-repeat center;
+  height: 100vh;
+
+}
+
+.contents{
+  margin-left: 10px;
+}
+
+.sidenav .logo a{
+  color: mediumseagreen;
+  font-size: 33px;
+  font-width: 600;
+  font-weight: bold;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+h1, h2, h3 {
+  color: DeepSkyBlue;
+  background-color: #000;
+  margin: 10px 5px;
+}
+
+h2 {
+  color: GreenYellow;
+}
+
+.games{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  font-size: 24px;
+}
+
+.game .game-graphics{
+  display: inline-block;
+  vertical-align: top;
+  max-width: 640px;
+}
+
+.game .game-info{
+  max-width: 700px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.list-of-games{
+  max-width: 90%;
+  margin-left: 10px;
+
+  border: solid 5px peachpuff;
+  border-radius: 14px;
+}
+
+.list-of-games .game{
+  max-width: 90%;
+  margin: auto;
+  margin-top: 10px;
+
+  background-color: antiquewhite;
+  font-size: 16px;
+
+  border: solid 2px mediumseagreen;
+  border-radius: 10px;
+}
+
+.external-links{
+  font-size: 27px;
+}
+
+.introduction{
+  font-size: 30px;
+}
