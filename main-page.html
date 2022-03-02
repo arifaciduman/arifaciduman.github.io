@@ -34,32 +34,42 @@
   <a href="#chasing-after-the-light">Chasing After the Light</a>
   <a href="#back-to-hometown">Back to Hometown</a>
   <a href="#unreliable-artifact">(Un)reliable Artifact</a>
-  <a href="#break-time">Break Time</a>
+  <a href="#need-more-space">Need More Space</a>
 </div>
 
 <div  class="main">
-  <div>
-    <h1>Welcome</h1>
+  <div class="welcome">
+    <h1>Hey, check out my portfolio!</h1>
+  </div>
+  <div class="external-links">
+    <div class="link">
+      <a href="https://arifacid.itch.io/" target="_blank"><img alt="Itch.io" src="images/itchiolg.png" height="35"></a><br/>
+    </div>
+    <div class="link">
+      <a href="https://twitter.com/VikkaGames" target="_blank"><img alt="Twitter" src="images/twitterlg.png" height="35"></a><br/>
+    </div>
+    <div class="link">
+      <a href="https://www.instagram.com/vikkagames/" target="_blank"><img alt="Instagram" src="images/instalg.png" height="35"></a>
+    </div>
+    <div class="link">
+      <a href="https://globalgamejam.org/users/arifaciduman" target="_blank"><img alt="Global Game Jam" src="images/ggjlg.png" height="35"></a>
+    </div>
+
   </div>
   <div id="about-me" class="contents">
     <div class="introduction">
-      <p>I am Arif. I like to develop and play games. I mainly do programming, design and VFX in projects. I have participated in game jams, from Global Game Jam
-        to Ludum Dare and even smaller itch.io game jams. I also have been playing the guitar and bass since I can remember. I love tabletop RPGs and board games
-        including D&D, Magic the Gathering, etc. I also have some Dungeon Mastering experience playing tabletop RPGs.
+      <p>I am Arif. I like to develop and play games. I mainly do programming and game design in projects, but lately I
+        have been dabbling in VFX. I have participated in Global Game Jam, Ludum Dare and even smaller itch.io game jams.
+        I also have been playing the guitar and bass since I can remember. I love both playing and Dungeon Mastering
+        tabletop RPGs and board games including D&D, Magic the Gathering, etc.
       </p>
     </div>
   </div>
-  <div id="external-links" class="contents">
-    <div class="external-links">
-      <p>itch.io page: <a href="https://arifacid.itch.io/" target="_blank"><img alt="Itch.io" src="images/itchio.png" width="40" height="30"></a><br />
-        instagram of current game in progress: <a href="https://www.instagram.com/vikkagames/" target="_blank"><img alt="Instagram" src="images/instagram.png" width="30" height="30"></a>
-      <p/>
-    </div>
-  </div>
-
   <div class="games">
-    <p> You can see the games I have worked on down below.</p>
     <div class="list-of-games">
+      <div class="works-below">
+        <p>You can see the games I have worked on down below.</p>
+      </div>
       <div class="game">
         <div id = "cardbuster" class="game-name">
           <p>Cardbuster</p>
@@ -82,21 +92,18 @@
           </div>
         </div>
         <div class="game-info">
-          <p>Cardbuster is a merge between action-adventure and deckbuilder genres. While keeping the
-            strategic style of a deckbuilder, we wanted to make an action filled real-time game.
-            In Cardbuster you use Cards which grant you abilities for a limited time to change the gameplay.
+          <p>Cardbuster is a merge between action-adventure and deckbuilder genres. In Cardbuster you use Cards which
+            grant you abilities for a limited time to change the gameplay.<br>
             <br>
+            After implementing basic movement I have developed the architecture of the ability system. I have used
+            Scriptable Objects as a way to store information about the abilities' both aesthetic and mechanical elements.
+            Mechanical elements include damage, damageType, effectRadius, radiusAngle, abilityTarget, abilityDuration,
+            attackSpeed etc. Aesthetic elements include name, abilityImage, vfx, sfx etc. Using a card utilizes this
+            stored information to enable using the corresponding ability to either defeat enemies or overcome platforming
+            challenges.<br>
             <br>
-            After implementing basic movement I have developed the architecture of the ability system.
-            I have used Scriptable Objects as a way to store information about the abilities' both aesthetic and
-            mechanical elements. Mechanical elements include damage, damageType, effectRadius,
-            radiusAngle, abilityTarget, abilityDuration, attackSpeed etc. Aesthetic elements include name,
-            abilityImage, vfx, sfx etc. Using a card utilizes this stored information to enable using the
-            corresponding ability to either defeat enemies or overcome platforming challenges.
-            <br>
-            <br>
-            I also have made VFX such as ability effects. I have prepared sprites to use in Unity's Particle
-            Effects and Visual Effect Graph tools working on Adobe Photoshop.
+            I also have made ability effect VFX. I have prepared sprites on Adobe Photoshop to use in Unity3D's Particle
+            Effects and Visual Effect Graph tools.
           </p>
         </div>
       </div>
@@ -185,10 +192,11 @@
         </div>
         <div class="game-info">
           <p>In Back to Hometown, You play as a wizard who returns to their town after many years to find it corrupted by
-          an alien force. Using your abilities you kill monsters and cleanse the area. 1st ability is a single projectile fired
-          from your staff (video 1). 2nd ability is an area of effect damage cast in front of the Player (video 1). 3rd ability is an area of effect ability
-          cast around the player which heals themselves and clears the corruption around (video 2). Boss corrupts an adjacent tile every
-            few seconds and corrupted tiles allows portals to open above them to spawn more monsters (video 3).<br>
+            an alien force. Using your abilities you kill monsters and cleanse the area. 1st ability is a single projectile
+            fired from your staff (video 1). 2nd ability is an area of effect damage cast in front of the Player (video 1).
+            3rd ability is an area of effect ability cast around the player which heals themselves and clears the corruption
+            around (video 2). Boss corrupts an adjacent tile every few seconds and corrupted tiles allows portals to open
+            above them to spawn more monsters (video 3).<br>
           <br>
           I did programming, game design and level design of this game.</p>
         </div>
@@ -220,41 +228,43 @@
             building/tile you receive points. While cleansing a building restores it, cleansing a road tile destroys the
             tile (video 2), so you need to be careful to not fall into the abyss through destroyed parts of the road (video 3).<br>
             <br>
-            I did the programming and level design while taking part in the game design process</p>
+            I did all the programming and level design while taking part in the game design process</p>
         </div>
       </div>
       <div class="game">
-        <div id="break-time" class="game-name">
-          <p>Break Time</p>
+        <div id="need-more-space" class="game-name">
+          <p>Need More Space</p>
         </div>
         <div class="game-graphics">
           <div class="screenshot">
             <video width="500" muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/bt1.webm" type="video/webm"/>
+              <source src ="images/nms1.webm" type="video/webm"/>
             </video>
           </div>
           <div class="screenshot">
             <video width="500" muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/bt2.webm" type="video/webm"/>
+              <source src ="images/nms2.webm" type="video/webm"/>
             </video>
           </div>
           <div class="screenshot">
             <video width="500" muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/bt3.webm" type="video/webm"/>
+              <source src ="images/nms3.webm" type="video/webm"/>
             </video>
           </div>
         </div>
         <div class="game-info">
-          <p>Break Time is 2020 Global Game Jam entry game for our team which was my first game jam. In Break Time there
-            are parallel universes
+          <p>Need More Space is Ludum Dare 47 entry game for our team. In Need More Space, You need to find energy crystals
+            in order to power your spaceship up to escape the sphere you are on. Planets are too hot under the sun and too
+            cold at the opposite side. You need to bring ice cubes under sun to melt them and drink, lure monsters to the
+            sun to cook them (video 3) then eat, and be aware of your own body temperature so that you don't overheat or
+            freeze yourself.<br>
             <br>
-            <br>
-            I took part in programming and level design of this game. I also did the implementation of the level in Unity3D.</p>
+            I have programmed monster AI so that they don't wander under the sun themselves and chase after You when Player
+            gets in range(video 2), did the lightening settings and movement of the sun and moon around the orbit (video 1).</p>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 </body>
 </html>
