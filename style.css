@@ -79,15 +79,11 @@ h2 {
 }
 
 .game .game-graphics{
-  display: inline-block;
-  vertical-align: top;
   max-width: 640px;
 }
 
 .game .game-info{
   max-width: 700px;
-  display: inline-block;
-  vertical-align: top;
 }
 
 .list-of-games{
