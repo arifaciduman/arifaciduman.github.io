@@ -5,17 +5,36 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta charset="UTF-8">
   <title>CV main page</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+  </script>
 </head>
 
 <body>
 <div class="sidenav">
   <div class="logo"><a href="#">Portfo<span>lio</span></a></div>
-  <a href="#">Cardbuster</a>
-  <a href="#">Life Socks</a>
-  <a href="#">Chasing After the Light</a>
-  <a href="#">Back to Hometown</a>
-  <a href="#">Break Time</a>
-  <a href="#">(Un)reliable Artifact</a>
+  <a href="#cardbuster">Cardbuster</a>
+  <a href="#life-socks">Life Socks</a>
+  <a href="#chasing-after-the-light">Chasing After the Light</a>
+  <a href="#back-to-hometown">Back to Hometown</a>
+  <a href="#unreliable-artifact">(Un)reliable Artifact</a>
+  <a href="#break-time">Break Time</a>
 </div>
 
 <div  class="main">
@@ -42,8 +61,19 @@
     <p> You can see the games I have worked on down below.</p>
     <div class="list-of-games">
       <div class="game">
+        <div id = "cardbuster" class="game-name">
+          <p>Cardbuster</p>
+        </div>
         <div class="game-graphics">
-          <img src="images/buster%20final.png" width="640" height="360">
+          <div class="screenshot">
+            <img src="images/buster%20final.png" class="screenshot">
+          </div>
+          <div class="screenshot">
+            <p>LIFE SOCKS PIC2</p>
+          </div>
+          <div class="screenshot">
+            <p>LIFE SOCKS PIC3</p>
+          </div>
         </div>
         <div class="game-info">
           <p>Cardbuster is a merge between action-adventure and deckbuilder genres. While keeping the
@@ -65,53 +95,155 @@
         </div>
       </div>
       <div class="game">
+        <div id="life-socks" class="game-name">
+          <p>Life Socks</p>
+        </div>
         <div class="game-graphics">
           <div class="screenshot">
-            <p>LIFE SOCKS PIC1</p>
+            <video width="500" muted loop controls="controls" onclick="this.play()">
+              <source src ="images/ls1.webm" type="video/webm"/>
+            </video>
           </div>
           <div class="screenshot">
-            <p>LIFE SOCKS PIC2</p>
+            <video width="500" muted loop controls="controls" onclick="this.play()">
+              <source src ="images/ls2.webm" type="video/webm"/>
+            </video>
           </div>
           <div class="screenshot">
-            <p>LIFE SOCKS PIC3</p>
+            <video width="500" muted loop controls="controls" onclick="this.play()">
+              <source src ="images/ls3.webm" type="video/webm"/>
+            </video>
           </div>
         </div>
         <div class="game-info">
           <p>Life Socks is 2021 Global Game Jam entry game for our team. Life Socks is a 2D-platformer-puzzle game
             in which you control a sock who has lost their pair trying to find them. Player has 2 item slots in which they
-            can carry either keys to open doors or power-ups. There are power-ups such as 'Feet' which enable you to
-            walk faster/jump and if you have 2 'Feet' items you can double-jump, 'Umbrella' item enables you to glide long
-            distances.<br>
+            can carry either keys to open doors or power-ups (video 1). There are power-ups such as 'Feet' which enable you to
+            walk faster/jump and if you have 2 'Feet' items you can double-jump (video 2), 'Umbrella' item enables you to glide long
+            distances (video 3).<br>
             <br>
-            I took part in programming and level design of this game. I also did the implementation of the level in Unity.</p>
+            I took part in programming and level design of this game. I also did the implementation of the level in Unity3D.</p>
         </div>
       </div>
       <div class="game">
+        <div id="chasing-after-the-light" class="game-name">
+          <p>Chasing After the Light</p>
+        </div>
         <div class="game-graphics">
-          <p>CHASING AFTER THE LIGHT PIC</p>
+          <div class="screenshot">
+            <video width="500" muted loop controls="controls" onclick="this.play()">
+              <source src ="images/catl1.webm" type="video/webm"/>
+            </video>
+          </div>
+          <div class="screenshot">
+            <video width="500" muted loop controls="controls" onclick="this.play()">
+              <source src ="images/catl2.webm" type="video/webm"/>
+            </video>
+          </div>
+          <div class="screenshot">
+            <video width="500" muted loop controls="controls" onclick="this.play()">
+              <source src ="images/catl3.webm" type="video/webm"/>
+            </video>
+          </div>
         </div>
         <div class="game-info">
           <p>Chasing After the Light is 2022 Global Game Jam entry game for our team. Chasing After the Light is a 2D
             platformer game in which Player tries to stay in the light radius while the light object moves forward on its
-            own to keep the sanity level high. If the sanity bar drops to zero the game ends. Player gains points as long
-            as they stay alive. Player increases their score multiplier proportional to how close they are to the light source.<br>
+            own (video 1) to keep the sanity level high. Player loses sanity if they stay out of the light (video 2). If the sanity
+            bar drops to zero or player hits the spikes the game ends (video 3). Player gains points as long as they stay alive.
+            Player increases their score multiplier proportional to how close they are to the light source.<br>
             <br>
             I did all the programming and level design of this game using Unity3D.</p>
         </div>
       </div>
       <div class="game">
+        <div id="back-to-hometown" class="game-name">
+          <p>Back to Hometown</p>
+        </div>
         <div class="game-graphics">
-          <p>BACK TO HOMETOWN PIC</p>
+          <div class="screenshot">
+            <video width="500" muted loop controls="controls" onclick="this.play()">
+              <source src ="images/bth1.webm" type="video/webm"/>
+            </video>
+          </div>
+          <div class="screenshot">
+            <video width="500" muted loop controls="controls" onclick="this.play()">
+              <source src ="images/bth2.webm" type="video/webm"/>
+            </video>
+          </div>
+          <div class="screenshot">
+            <video width="500" muted loop controls="controls" onclick="this.play()">
+              <source src ="images/bth3.webm" type="video/webm"/>
+            </video>
+          </div>
         </div>
         <div class="game-info">
           <p>In Back to Hometown, You play as a wizard who returns to their town after many years to find it corrupted by
-          an alien force. Using your abilities you kill monsters and cleanse the area. 1st ability is single projectile fired
-          from your staff. 2nd ability is an area of effect cast in front of the Player. 3rd ability is an area of effect ability
-          cast around the player which heals themselves and clears the corruption around. Boss corrupts an adjacent tile every
-            few seconds and corrupted tiles allows portals to open above them to spawn more monsters.<br>
-            few seconds and corrupted tiles allows portals to open above them to spawn more monsters.<br>
+          an alien force. Using your abilities you kill monsters and cleanse the area. 1st ability is a single projectile fired
+          from your staff (video 1). 2nd ability is an area of effect damage cast in front of the Player (video 1). 3rd ability is an area of effect ability
+          cast around the player which heals themselves and clears the corruption around (video 2). Boss corrupts an adjacent tile every
+            few seconds and corrupted tiles allows portals to open above them to spawn more monsters (video 3).<br>
           <br>
           I did programming, game design and level design of this game.</p>
+        </div>
+      </div>
+      <div class="game">
+        <div id="unreliable-artifact" class="game-name">
+          <p>(Un)reliable Artifact</p>
+        </div>
+        <div class="game-graphics">
+          <div class="screenshot">
+            <video width="500" muted loop controls="controls" onclick="this.play()">
+              <source src ="images/ua1.webm" type="video/webm"/>
+            </video>
+          </div>
+          <div class="screenshot">
+            <video width="500" muted loop controls="controls" onclick="this.play()">
+              <source src ="images/ua2.webm" type="video/webm"/>
+            </video>
+          </div>
+          <div class="screenshot">
+            <video width="500" muted loop controls="controls" onclick="this.play()">
+              <source src ="images/ua3.webm" type="video/webm"/>
+            </video>
+          </div>
+        </div>
+        <div class="game-info">
+          <p>(Un)reliable Artifact is our Ludum Dare 49 entry for our team. In this game You have an unstable artifact which
+            explodes in random intervals cleansing the corrupted buildings and road tiles in range (video 1). With every cleansed
+            building/tile you receive points. While cleansing a building restores it, cleansing a road tile destroys the
+            tile (video 2), so you need to be careful to not fall into the abyss through destroyed parts of the road (video 3).<br>
+            <br>
+            I did the programming and level design while taking part in the game design process</p>
+        </div>
+      </div>
+      <div class="game">
+        <div id="break-time" class="game-name">
+          <p>Break Time</p>
+        </div>
+        <div class="game-graphics">
+          <div class="screenshot">
+            <video width="500" muted loop controls="controls" onclick="this.play()">
+              <source src ="images/bt1.webm" type="video/webm"/>
+            </video>
+          </div>
+          <div class="screenshot">
+            <video width="500" muted loop controls="controls" onclick="this.play()">
+              <source src ="images/bt2.webm" type="video/webm"/>
+            </video>
+          </div>
+          <div class="screenshot">
+            <video width="500" muted loop controls="controls" onclick="this.play()">
+              <source src ="images/bt3.webm" type="video/webm"/>
+            </video>
+          </div>
+        </div>
+        <div class="game-info">
+          <p>Break Time is 2020 Global Game Jam entry game for our team which was my first game jam. In Break Time there
+            are parallel universes
+            <br>
+            <br>
+            I took part in programming and level design of this game. I also did the implementation of the level in Unity3D.</p>
         </div>
       </div>
     </div>
