@@ -15,10 +15,8 @@
   left: 0;
   background-color: #4FD3C4;
   overflow-x: hidden; /* disable horizontal scroll*/
-  padding-top: 20px;
+  padding-top: 1%;
   font-family: 'Ubuntu', sans-serif;
-  border-width: 5px;
-  border-color: cornflowerblue;
 }
 
 .sidenav a{
@@ -35,16 +33,19 @@
 
 .main{
   margin-left: 180px; /* Same as sidebar width */
-  padding: 0px 10px;
-  padding-top: 20px;
+  padding: 0% 0.5%;
+  padding-top: 1%;
   font-family: 'Nunito', sans-serif;
+
+  text-align: justify;
+  text-justify: inter-word;
 
   background-color: #C1F8CF;
 
 }
 
 .contents{
-  margin-left: 10px;
+  margin-left: 1%;
 }
 
 .sidenav .logo a{
@@ -55,14 +56,13 @@
 }
 
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav {padding-top: 0%;}
+  .sidenav a {font-size: 0%;}
 }
 
 
 h1, h2, h3 {
   color: #488FB1;
-  margin: 10px 2%;
   font-weight: bold;
 }
 
@@ -88,7 +88,6 @@ h2 {
 
 .game .game-graphics{
   max-width: 100%;
-  margin-top: 10px;
   padding-left: 1%;
   padding-right: 1%;
 }
@@ -114,9 +113,10 @@ video::-webkit-media-slider-container{
 .game .game-info{
   max-width: 95%;
   margin-left: 2%;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  text-align: left;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  text-align: justify;
+  text-justify: inter-word;
   color: #533E85;
 }
 .game .game-name{
@@ -138,11 +138,12 @@ video::-webkit-media-slider-container{
 .list-of-games .game{
   max-width: 98%;
   margin: auto;
-  margin-top: 10px;
   margin-left: 1.5%;
+  margin-right: 1.5%;
+  margin-bottom: 1%;
 
   background-color: #ddffe6;
-  font-size: 16px;
+  font-size: 19px;
 
   border: solid 11px #488FB1;
   border-radius: 5px;
@@ -151,9 +152,8 @@ video::-webkit-media-slider-container{
 .external-links{
   position: absolute;
   right: 0px;
-  font-size: 20px;
   margin-right: 2%;
-  margin-top: 15px;
+  margin-top: 0.5%;
   display: inline-block;
   horiz-align: right;
 }
@@ -167,12 +167,20 @@ video::-webkit-media-slider-container{
 .welcome{
   display: inline-block;
   width: 70%;
-  margin-left: 1.5%;
+  margin-left: 2.5%;
+  margin-top: 0.4%;
+  margin-bottom: 0.4%;
 }
 
 .introduction{
   font-size: 24px;
-  margin-left: 2%;
+  margin-left: 1.5%;
+  margin-top: 0.1%;
   max-width: 95%;
   color: #533E85;
+}
+
+.team-members{
+  font-size: 17px;
+  margin-top: 1%;
 }
