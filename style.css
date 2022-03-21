@@ -41,7 +41,6 @@
   text-justify: inter-word;
 
   background-color: #C1F8CF;
-
 }
 
 .contents{
@@ -62,12 +61,21 @@
 
 
 h1, h2, h3 {
-  color: #488FB1;
   font-weight: bold;
+}
+
+h1 {
+  color: #488FB1;
 }
 
 h2 {
   color: #488FB1;
+  font-size: 28px;
+}
+
+h3 {
+  color: #533E85;
+  font-size: 20px;
 }
 
 .works-below{
@@ -88,19 +96,21 @@ h2 {
 
 .game .game-graphics{
   max-width: 100%;
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 1.5%;
+  /*padding-right: 1.5%;*/
 }
 .screenshot{
   width: 100%;
-  max-width: 480px;
+  max-width: 31.5%;
   display: inline-block;
-  margin-left: 1%;
-  margin-right: 1%;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
   }
 
 .video{
-  max-width: 480px;
+  /*max-width: 30%;*/
+  /*width: 100%;*/
+  /*height: auto;*/
 }
 
 video::-webkit-media-slider-thumb {
@@ -108,6 +118,10 @@ video::-webkit-media-slider-thumb {
 }
 video::-webkit-media-slider-container{
   display: none;
+}
+
+video{
+  width: 100%;
 }
 
 .game .game-info{
@@ -119,9 +133,8 @@ video::-webkit-media-slider-container{
   text-justify: inter-word;
   color: #533E85;
 }
+
 .game .game-name{
-  font-weight: bold;
-  font-size: 33px;
   padding-left: 2%;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -130,9 +143,6 @@ video::-webkit-media-slider-container{
 .list-of-games{
   max-width: 100%;
   margin-left: 10px;
-
-  /*border: solid 5px #488FB1;*/
-  /*border-radius: 43px;*/
 }
 
 .list-of-games .game{
@@ -149,8 +159,10 @@ video::-webkit-media-slider-container{
   border-radius: 5px;
   border-style: ridge;
 }
+
 .external-links{
   position: absolute;
+  max-width: 30%;
   right: 0px;
   margin-right: 2%;
   margin-top: 0.5%;
@@ -183,4 +195,20 @@ video::-webkit-media-slider-container{
 .team-members{
   font-size: 17px;
   margin-top: 1%;
+  max-width: 30%;
+  text-align: justify;
+  text-justify: inter-word;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.my-contributions{
+  max-width: 66%;
+  width: 66%;
+  margin-right: 3%;
+  margin-top: 1%;
+  text-align: justify;
+  text-justify: inter-word;
+  display: inline-block;
+  vertical-align: top;
 }

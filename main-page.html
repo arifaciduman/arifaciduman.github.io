@@ -25,20 +25,21 @@
       });
     });
   </script>
+
 </head>
 
 <body style="background-color: #C1F8CF">
 <div class="sidenav">
   <div class="logo"><a href="#">Portfo<span>lio</span></a></div>
   <a href="#cardbuster">Cardbuster</a>
-  <a href="#life-socks">Life Socks</a>
   <a href="#chasing-after-the-light">Chasing After the Light</a>
   <a href="#back-to-hometown">Back to Hometown</a>
   <a href="#unreliable-artifact">(Un)reliable Artifact</a>
   <a href="#need-more-space">Need More Space</a>
+  <a href="#life-socks">Life Socks</a>
 </div>
 
-<div  class="main">
+<div  class="main" >
   <div class="welcome">
     <h1>Hey, check out my portfolio!</h1>
   </div>
@@ -75,100 +76,53 @@
     <div class="list-of-games">
       <div class="game">
         <div id = "cardbuster" class="game-name">
-          <p>Cardbuster</p>
+          <h2>Cardbuster</h2>
+        </div>
+        <div class="game-info">
+          <p>Cardbuster is a merge between action-adventure and deckbuilder genres. In Cardbuster, Player uses Cards that
+            grant them abilities for a limited time to change the gameplay. Casting a card fills the matching ability slot
+            to use the corresponding ability for a period of time to either defeat enemies(video 1) or overcome platforming
+            challenges(video 2). Like classic deckbuilder games you mulligan/draw your hand before a combat begins.(video 1).<br>
+            <br></p>
         </div>
         <div class="game-graphics">
           <div class="screenshot">
-            <video width="500" muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/cb_fight.webm" type="video/webm"/>
+            <video loop preload="metadata" controls="controls" onclick="this.play()">
+              <source src ="images/cb_fight_mulligan.webm" type="video/webm"/>
             </video>
           </div>
           <div class="screenshot">
-            <video width="500" muted loop preload="metadata" controls="controls" onclick="this.play()">
+            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
               <source src ="images/cb_platform.webm" type="video/webm"/>
             </video>
           </div>
           <div class="screenshot">
-            <video width="500" muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/cb_mulligan.webm" type="video/webm"/>
+            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
+              <source src ="images/cb_hurricane.webm" type="video/webm"/>
             </video>
           </div>
         </div>
         <div class="game-info">
-          <p>Cardbuster is a merge between action-adventure and deckbuilder genres. In Cardbuster, Player uses Cards that
-            grant them abilities for a limited time to change the gameplay.<br>
-            <br>
-            After implementing basic movement I have developed the architecture of the ability system. I have used
-            Scriptable Objects as a way to store information about the abilities' both aesthetic and mechanical elements.
-            Mechanical elements include damage, damageType, effectRadius, radiusAngle, abilityTarget, abilityDuration,
-            attackSpeed etc. Aesthetic elements include name, abilityImage, vfx, sfx etc. Casting a card utilizes this
-            stored information to enable active usage of the corresponding ability for a period of time to either defeat
-            enemies(video 1) or overcome platforming challenges(video 2). Like classic deckbuilder games you mulligan/draw
-            your hand before a combat begins.(video 3)<br>
-            <br>
-            I also have made some ability effect VFX. I have prepared sprites on Adobe Photoshop to use in Unity3D's Particle
-            Effects and Visual Effect Graph tools.
+          <div class="my-contributions">
+            <h3>My contributions</h3>
+            <p>After implementing basic movement I have developed the architecture of the ability system. I have used
+              Scriptable Objects as a way to store information about the abilities' both aesthetic and mechanical elements.
+              Mechanical elements include damage, damageType, effectRadius, radiusAngle, abilityTarget, abilityDuration,
+              attackSpeed etc. Aesthetic elements include name, abilityImage, VFX, SFX etc.<br>
+              <br>
+              I also have made some ability effect VFX. I have prepared sprites on Adobe Photoshop to use in Unity3D's
+              Particle Effects and Visual Effect Graph tools (video 3).</p>
+          </div>
           <div class="team-members">
-            <p>Team: Ahmet Arif Acıduman(programmer), Alara Çiloğlu(artist), Kaan Çulha(sound)</p>
+            <h3>Contributors</h3>
+            <p>Ahmet Arif Acıduman (programmer)<br> Alara Çiloğlu (artist)<br>Kaan Çulha (sound)</p>
           </div>
           </p>
         </div>
       </div>
       <div class="game">
-        <div id="life-socks" class="game-name">
-          <p>Life Socks</p>
-        </div>
-        <div class="game-graphics">
-          <div class="screenshot">
-            <video width="500" muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/ls1.webm" type="video/webm"/>
-            </video>
-          </div>
-          <div class="screenshot">
-            <video width="500" muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/ls2.webm" type="video/webm"/>
-            </video>
-          </div>
-          <div class="screenshot">
-            <video width="500" muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/ls3.webm" type="video/webm"/>
-            </video>
-          </div>
-        </div>
-        <div class="game-info">
-          <p>Life Socks is 2021 Global Game Jam entry game for our team. Life Socks is a 2D-platformer-puzzle game in
-            which Player controls a sock who has lost their pair trying to find them. Player has 2 item slots that they
-            can carry either keys to open doors or power-ups (video 1). There are power-ups such as 'Feet' which enable
-            Player to walk faster/jump and if Player has 2 'Feet' items They can double-jump (video 2), 'Umbrella' item
-            enables Player to glide long distances (video 3).<br>
-            <br>
-            I took part in programming and level design of this game. I also did the implementation of the level in Unity3D.</p>
-          <div class="team-members">
-            <p>Team: Ahmet Arif Acıduman(programmer), Alara Çiloğlu(artist), Batuhan Çalışkan(programmer), Filiz Yeniköylü(artist),
-            Yamanefe Uğurlu(sound, art)</p>
-          </div>
-        </div>
-      </div>
-      <div class="game">
         <div id="chasing-after-the-light" class="game-name">
-          <p>Chasing After the Light</p>
-        </div>
-        <div class="game-graphics">
-          <div class="screenshot">
-            <video width="500" muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/catl1.webm" type="video/webm"/>
-            </video>
-          </div>
-          <div class="screenshot">
-            <video width="500" muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/catl2.webm" type="video/webm"/>
-            </video>
-          </div>
-          <div class="screenshot">
-            <video width="500" muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/catl3.webm" type="video/webm"/>
-            </video>
-          </div>
+          <h2>Chasing After the Light</h2>
         </div>
         <div class="game-info">
           <p>Chasing After the Light is 2022 Global Game Jam entry game for our team. Chasing After the Light is a 2D
@@ -176,101 +130,134 @@
             own (video 1) to keep the sanity level high. Player loses sanity if they stay out of the light (video 2). If the sanity
             bar drops to zero or player hits the spikes the game ends (video 3). Player gains points as long as they stay alive.
             Player increases their score multiplier proportional to how close they are to the light source.<br>
-            <br>
-            I did all the programming and level design of this game using Unity3D.</p>
+            <br></p>
+        </div>
+        <div class="game-graphics">
+          <div class="screenshot">
+            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
+              <source src ="images/catl1.webm" type="video/webm"/>
+            </video>
+          </div>
+          <div class="screenshot">
+            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
+              <source src ="images/catl2.webm" type="video/webm"/>
+            </video>
+          </div>
+          <div class="screenshot">
+            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
+              <source src ="images/catl3.webm" type="video/webm"/>
+            </video>
+          </div>
+        </div>
+        <div class="game-info">
+          <div class="my-contributions">
+            <h3>My contributions</h3>
+            <p>I did all the programming and level design of this game using Unity3D.<br>For the movement of light I have
+              prepared a rail system by setting up a list of points and increasing the index of the nextPoint according
+              to the proximity of the light to the current nextPoint. After checking if the player is close enough to the
+              light by a simple distance calculation I had to determine if the player was in the dark or not by casting
+              rays to see if there was an obstacle between the light and the player. I have used experimental 2d light
+              feature of Unity3D's Universal Render Pipeline to achieve the desired light/dark effect.</p>
+          </div>
           <div class="team-members">
-            <p>Team: Ahmet Arif Acıduman(programmer), Alara Çiloğlu(artist), Barış Yaman(sound), Sercan Uysal(artist)</p>
+            <h3>Contributors</h3>
+            <p>Ahmet Arif Acıduman (programmer)<br>Alara Çiloğlu (artist)<br>Barış Yaman (sound)<br>Sercan Uysal (artist)</p>
           </div>
         </div>
       </div>
       <div class="game">
         <div id="back-to-hometown" class="game-name">
-          <p>Back to Hometown</p>
+          <h2>Back to Hometown</h2>
+        </div>
+        <div class="game-info">
+          <p>Back to Hometown is a game made for an Itch.io minijam. In Back to Hometown, Player plays as a wizard who
+            returns to their town after many years to find it corrupted by an alien force. Using Player's abilities, kill
+            monsters and cleanse the area. 1st ability is a single projectile fired from Player's staff (video 1).
+            2nd ability is an area of effect damage cast in front of the Player (video 1). 3rd ability is an area of effect
+            ability cast around the player which heals themselves and clears the corruption around (video 2). Boss corrupts
+            an adjacent tile every few seconds and corrupted tiles allow portals to open above them that spawn more monsters
+            (video 3).<br>
+            <br></p>
         </div>
         <div class="game-graphics">
           <div class="screenshot">
-            <video width="500" muted loop controls="controls" onclick="this.play()">
+            <video muted loop controls="controls" onclick="this.play()">
               <source src ="images/bth1.webm" type="video/webm"/>
             </video>
           </div>
           <div class="screenshot">
-            <video width="500" muted loop controls="controls" onclick="this.play()">
+            <video muted loop controls="controls" onclick="this.play()">
               <source src ="images/bth2.webm" type="video/webm"/>
             </video>
           </div>
           <div class="screenshot">
-            <video width="500" muted loop controls="controls" onclick="this.play()">
+            <video muted loop controls="controls" onclick="this.play()">
               <source src ="images/bth3.webm" type="video/webm"/>
             </video>
           </div>
         </div>
         <div class="game-info">
-          <p>In Back to Hometown, Player plays as a wizard who returns to their town after many years to find it corrupted by
-            an alien force. Using Player's abilities, kill monsters and cleanse the area. 1st ability is a single projectile
-            fired from Player's staff (video 1). 2nd ability is an area of effect damage cast in front of the Player (video 1).
-            3rd ability is an area of effect ability cast around the player which heals themselves and clears the corruption
-            around (video 2). Boss corrupts an adjacent tile every few seconds and corrupted tiles allow portals to open
-            above them that spawn more monsters (video 3).<br>
-          <br>
-          I did programming, game design and level design of this game.</p>
+          <div class="my-contributions">
+            <h3>My contributions</h3>
+            <p>I did programming, game design and level design of this game.<br> I like the alien corruption theme and
+              wanted to create this effect not just visually but also gameplay-wise. I have used Unity3D's Tilemap feature
+              to have a 2D map. The starting corruption point is the tile under the center of the Boss. From that point in
+              random intervals all adjacent tiles are corrupted one by one, meaning their sprites are changed and tags are
+              set to "Corrupted". Portals check under them to see if the tag of tile they are on is "Corrupted". If it is
+              they activate and start spawning mobs. "Cleanse" skill (video 2) works in a similar way by setting the tags
+              of tiles under and adjacent to the Player to "Normal" and changing their sprite to a flowery one. Monster AI
+              is a simple Move, Attack, Cooldown system.</p>
+          </div>
           <div class="team-members">
-            <p>Team: Ahmet Arif Acıduman(programmer), Alara Çiloğlu(artist), Kadircan Aksoy(sound)</p>
+            <h3>Contributors</h3>
+            <p>Ahmet Arif Acıduman (programmer)<br>Alara Çiloğlu (artist)<br>Kadircan Aksoy (sound)</p>
           </div>
         </div>
       </div>
       <div class="game">
         <div id="unreliable-artifact" class="game-name">
-          <p>(Un)reliable Artifact</p>
-        </div>
-        <div class="game-graphics">
-          <div class="screenshot">
-            <video width="500" muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/ua1.webm" type="video/webm"/>
-            </video>
-          </div>
-          <div class="screenshot">
-            <video width="500" muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/ua2.webm" type="video/webm"/>
-            </video>
-          </div>
-          <div class="screenshot">
-            <video width="500" muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/ua3.webm" type="video/webm"/>
-            </video>
-          </div>
+          <h2>(Un)reliable Artifact</h2>
         </div>
         <div class="game-info">
           <p>(Un)reliable Artifact is Ludum Dare 49 entry for our team. In this game Player has an unstable artifact which
             explodes in random intervals cleansing the corrupted buildings and road tiles in range (video 1). With every cleansed
             building/tile Player receives points. While cleansing a building restores it, cleansing a road tile destroys the
             tile (video 2), so Player needs to be careful to not fall into the abyss through destroyed parts of the road (video 3).<br>
-            <br>
-            I did all the programming and level design while taking part in the game design process</p>
+            <br></p>
+        </div>
+        <div class="game-graphics">
+          <div class="screenshot">
+            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
+              <source src ="images/ua1.webm" type="video/webm"/>
+            </video>
+          </div>
+          <div class="screenshot">
+            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
+              <source src ="images/ua2.webm" type="video/webm"/>
+            </video>
+          </div>
+          <div class="screenshot">
+            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
+              <source src ="images/ua3.webm" type="video/webm"/>
+            </video>
+          </div>
+        </div>
+        <div class="game-info">
+          <div class="my-contributions">
+            <h3>My contributions</h3>
+            <p>I did all the programming and level design while taking part in the game design process.<br>Corruption effect
+              is achieved in a similar manner to "Back to Hometown". The difference is all the buildings and road pieces
+              are stored in "Roads" and "Buildings" lists at the start of the game and removed from it when it gets corrupted.</p>
+          </div>
           <div class="team-members">
-            <p>Team: Ahmet Arif Acıduman(programmer), Alara Çiloğlu(artist), Kadircan Aksoy(sound)</p>
+            <h3>Contributors</h3>
+            <p>Ahmet Arif Acıduman (programmer)<br>Alara Çiloğlu (artist)<br>Kadircan Aksoy (sound)</p>
           </div>
         </div>
       </div>
       <div class="game">
         <div id="need-more-space" class="game-name">
-          <p>Need More Space</p>
-        </div>
-        <div class="game-graphics">
-          <div class="screenshot">
-            <video width="500" muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/nms3.webm" type="video/webm"/>
-            </video>
-          </div>
-          <div class="screenshot">
-            <video width="500" muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/nms2.webm" type="video/webm"/>
-            </video>
-          </div>
-          <div class="screenshot">
-            <video width="500" muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/nms1.webm" type="video/webm"/>
-            </video>
-          </div>
+          <h2>Need More Space</h2>
         </div>
         <div class="game-info">
           <p>Need More Space is Ludum Dare 47 entry game for our team. In Need More Space, Player needs to find energy crystals
@@ -278,12 +265,79 @@
             cold at the opposite side. Player needs to bring ice cubes under sun to melt them and drink, lure monsters to the
             sun to cook them (video 1) then eat, and be aware of Player's own body temperature so that Player doesn't overheat or
             freeze themselves.<br>
-            <br>
-            I have programmed monster AI so that they don't wander under the sun themselves and chase after the Player when They
-            get in range(video 2), did the lightening settings and movement of the sun and moon around the orbit (video 3).</p>
+            <br></p>
+        </div>
+        <div class="game-graphics">
+          <div class="screenshot">
+            <video  muted loop preload="metadata" controls="controls" onclick="this.play()">
+              <source src ="images/nms3.webm" type="video/webm"/>
+            </video>
+          </div>
+          <div class="screenshot">
+            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
+              <source src ="images/nms2.webm" type="video/webm"/>
+            </video>
+          </div>
+          <div class="screenshot">
+            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
+              <source src ="images/nms1.webm" type="video/webm"/>
+            </video>
+          </div>
+        </div>
+        <div class="game-info">
+          <div class="my-contributions">
+            <h3>My contributions</h3>
+            <p>I have programmed monster AI so that they don't wander under the sun themselves and chase after the Player
+              when They get in range(video 2). Since the planet Player is on is stationary, Monster AI checks the
+              "Vector3 nextPoint" 3d position vector they will move next to see if the horizontal x of the nextPoint
+              falls in positive values, if it does then the function determines the nextPoint again randomly. I also
+              implemented the lighting settings and movement of the sun and moon around the planet (video 3).</p>
+          </div>
           <div class="team-members">
-            <p>Team: Ahmet Arif Acıduman(programmer), Akın Özen(programmer), Alara Çiloğlu(artist), Batuhan Çalışkan(programmer),
-            Elçin Kılıç(artist), İsmail Temirci(artist), Sercan Uysal(artist), Yamanefe Uğurlu(sound)</p>
+            <h3>Contributors</h3>
+            <p>Ahmet Arif Acıduman (programmer)<br>Akın Özen (programmer)<br>Alara Çiloğlu (artist)<br>Batuhan Çalışkan (programmer)<br>
+            Elçin Kılıç (artist)<br>İsmail Temirci(artist)<br>Sercan Uysal (artist)<br>Yamanefe Uğurlu (sound)</p>
+          </div>
+        </div>
+      </div>
+      <div class="game">
+        <div id="life-socks" class="game-name">
+          <h2>Life Socks</h2>
+        </div>
+        <div class="game-info">
+          <p>Life Socks is 2021 Global Game Jam entry game for our team. Life Socks is a 2D-platformer-puzzle game in
+            which Player controls a sock who has lost their pair trying to find them. Player has 2 item slots that they
+            can carry either keys to open doors or power-ups (video 1). There are power-ups such as 'Feet' which enable
+            Player to walk faster/jump and if Player has 2 'Feet' items They can double-jump (video 2), 'Umbrella' item
+            enables Player to glide long distances (video 3).<br>
+            <br></p>
+        </div>
+        <div class="game-graphics">
+          <div class="screenshot">
+            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
+              <source src ="images/ls1.webm" type="video/webm"/>
+            </video>
+          </div>
+          <div class="screenshot">
+            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
+              <source src ="images/ls2.webm" type="video/webm"/>
+            </video>
+          </div>
+          <div class="screenshot">
+            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
+              <source src ="images/ls3.webm" type="video/webm"/>
+            </video>
+          </div>
+        </div>
+        <div class="game-info">
+          <div class="my-contributions">
+            <h3>My contributions</h3>
+            <p>I took part in programming and level design of this game. I also did the implementation of the level in Unity3D.</p>
+          </div>
+          <div class="team-members">
+            <h3>Contributors</h3>
+            <p>Ahmet Arif Acıduman (programmer)<br>Alara Çiloğlu (artist)<br>Batuhan Çalışkan (programmer)<br>
+              Filiz Yeniköylü (artist)<br>Yamanefe Uğurlu (sound, art)</p>
           </div>
         </div>
       </div>
