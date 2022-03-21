@@ -120,8 +120,9 @@ video{
 }
 
 .game .game-info{
-  max-width: 95%;
+  max-width: 100%;
   margin-left: 2%;
+  margin-right: 3%;
   margin-top: 2%;
   margin-bottom: 1%;
   text-align: justify;
@@ -158,7 +159,7 @@ video{
 .external-links{
   position: absolute;
   max-width: 30%;
-  right: 0px;
+  right: 1%;
   margin-right: 2%;
   margin-top: 0.5%;
   display: inline-block;
@@ -182,8 +183,9 @@ video{
 .introduction{
   font-size: 24px;
   margin-left: 1.5%;
+  margin-right: 3%;
   margin-top: 0.1%;
-  max-width: 95%;
+  max-width: 100%;
   color: #533E85;
 }
 
