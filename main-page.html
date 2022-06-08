@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,12 +25,12 @@
       });
     });
   </script>
-
 </head>
 
 <body style="background-color: #C1F8CF">
-<div class="sidenav">
-  <div class="logo"><a href="#">Portfo<span>lio</span></a></div>
+<div ID="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="logo"><a href="#">Pro<span>jects</span></a></div>
   <a href="#cardbuster">Cardbuster</a>
   <a href="#chasing-after-the-light">Chasing After the Light</a>
   <a href="#back-to-hometown">Back to Hometown</a>
@@ -39,10 +39,8 @@
   <a href="#life-socks">Life Socks</a>
 </div>
 
-<div  class="main" >
-  <div class="welcome">
-    <h1>Hey, check out my portfolio!</h1>
-  </div>
+<div class="topbar">
+  <button class="openbtn" onclick="openNav()">☰</button>
   <div class="external-links">
     <div class="link">
       <a href="https://arifacid.itch.io/" target="_blank"><img alt="Itch.io" src="images/itchiolg.png" height="35"></a><br/>
@@ -60,7 +58,14 @@
       <a href="https://www.instagram.com/vikkagames/" target="_blank"><img alt="Instagram" src="images/instalg.png" height="35"></a>
     </div>
   </div>
+</div>
+
+<div ID="main" class="main" >
+
   <div id="about-me" class="contents">
+    <div class="welcome">
+      <h1>Hey, check out my portfolio!</h1>
+    </div>
     <div class="introduction">
       <p>I am Arif. I like to develop and play games. I mainly do programming and game design in projects, but lately I
         have been dabbling in VFX. I have participated in Global Game Jam, Ludum Dare and even smaller itch.io game jams.
@@ -345,5 +350,20 @@
   </div>
   <div style="text-align: center;color: #533E85"> <p>Ahmet Arif Acıduman 2022</p> </div>
 </div>
+
+<script>
+/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+// document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+
 </body>
 </html>

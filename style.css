@@ -6,17 +6,47 @@
   text-decoration: none;
 }
 
+.topbar{
+  background-color: #4FD3C4;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
 .sidenav{
   height: 100%;
-  width: 180px;
+  width: 0;
   position: fixed;
-  z-index: 1; /* Stay on top */
+  z-index: 2; /* Stay on top */
   top: 0; /* Stay at the top*/
   left: 0;
   background-color: #4FD3C4;
   overflow-x: hidden; /* disable horizontal scroll*/
-  padding-top: 1%;
+  /*padding-top: 1%;*/
+  transition: 0.2s;
   font-family: 'Ubuntu', sans-serif;
+}
+
+.sidenav .closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn{
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #4FD3C4;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #533E85;
 }
 
 .sidenav a{
@@ -31,10 +61,19 @@
   color: #488FB1;
 }
 
+#main {
+  transition: margin-left .5s;
+  /*padding: 16px;*/
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
 .main{
-  margin-left: 180px; /* Same as sidebar width */
-  padding: 0% 0.5%;
-  padding-top: 1%;
+  /*padding: 0% 0.5%;*/
+  /*padding-top: 1%;*/
   font-family: 'Nunito', sans-serif;
 
   text-align: justify;
@@ -175,7 +214,7 @@ video{
 .welcome{
   display: inline-block;
   width: 70%;
-  margin-left: 2.5%;
+  margin-left: 1.5%;
   margin-top: 0.4%;
   margin-bottom: 0.4%;
 }
