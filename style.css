@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -6,66 +6,38 @@
   text-decoration: none;
 }
 
-.topbar{
-  background-color: #4FD3C4;
+html {
+  scroll-behavior: smooth;
+}
+
+.topbar {
+  background-color: #ededed;
   position: fixed;
   width: 100%;
-  height: 5%;
+  height: 60px;
   top: 0;
-  z-index: 1;
-}
-
-.sidenav{
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 2; /* Stay on top */
-  top: 0; /* Stay at the top*/
-  left: 0;
-  background-color: #4FD3C4;
-  overflow-x: hidden; /* disable horizontal scroll*/
-  /*padding-top: 1%;*/
-  transition: 0.2s;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Distribute space between items */
+  padding-left: 15vw; /* Add some padding to the left */
+  padding-right: 15vw;
   font-family: 'Ubuntu', sans-serif;
+
 }
 
-.sidenav .closebtn{
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+.name-role {
+  text-align: left; /* Align text to the left */
+  color: #1f1f1f;
 }
 
-.openbtn{
-  font-size: 2.2vh;
-  font-max-size: 2.2vh;
-  cursor: pointer;
-  background-color: #4FD3C4;
-  color: white;
-  padding: 10px 15px;
-  border: none;
+.name {
+  font-size: 26px; /* Adjust the font size as needed */
+  font-weight: bold;
 }
 
-.openbtn:hover {
-  background-color: #533E85;
-}
-
-.sidenav a{
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 22px;
-  color: #533E85;
-  display: block;
-}
-
-.sidenav a:hover {
-  color: #488FB1;
-}
-
-#main {
-  transition: margin-left .5s;
-  /*padding: 16px;*/
+.role {
+  font-size: 20px; /* Adjust the font size as needed */
 }
 
 @media screen and (max-height: 450px) {
@@ -75,17 +47,22 @@
 
 .main{
   /*padding: 0% 0.5%;*/
-  padding-top: 2.5%;
-  font-family: 'Nunito', sans-serif;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-top: 60px;
+  transition: margin-left .5s;
+  font-family: 'Ubuntu', sans-serif;
 
   text-align: justify;
   text-justify: inter-word;
 
-  background-color: #C1F8CF;
+  color: #1f1f1f;
+  background-color: #ededed;
 }
 
 .contents{
-  margin-left: 1%;
+  color: #51446E;
+  background-color: pink;
 }
 
 .sidenav .logo a{
@@ -102,48 +79,35 @@
 
 
 h1, h2, h3 {
-  font-weight: bold;
-}
-
-h1 {
-  color: #488FB1;
-}
-
-h2 {
-  color: #488FB1;
-  font-size: 28px;
-}
-
-h3 {
-  color: #533E85;
-  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #1f1f1f;
 }
 
 .works-below{
   margin-left: 2.1%;
   margin-bottom: 1.5%;
   font-weight: bold;
-  color: #533E85;
+  color: #ffffff;
 }
 
 .games{
   margin-top: 1%;
   margin-bottom: 1%;
-  padding-left: 0.5%;
-  padding-right: 0.5%;
   font-size: 24px;
-  color: #488FB1;
+  color: #000000;
 }
 
 .game .game-graphics{
   max-width: 100%;
-  margin-left: 2%;
-  /*margin-right: 2%;*/
+  align-content: center;
+  background-color: purple;
 }
 .screenshot{
-  max-width: 32%;
-  width: 100%;
-  display: inline-block;
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+  background-color: black;
+  text-align: center;
   }
 
 .video{
@@ -160,15 +124,22 @@ video{
   width: 100%;
 }
 
+.game{
+  border-bottom: 3px solid black; /* Add this line for the separator */
+  padding-bottom: 20px; /* Add some padding for spacing */
+  margin-bottom: 20px; /* Add some margin for spacing */
+}
+
 .game .game-info{
   max-width: 100%;
   margin-left: 2%;
-  margin-right: 3%;
+  margin-right: 2%;
   margin-top: 2%;
   margin-bottom: 1%;
   text-align: justify;
   text-justify: inter-word;
-  color: #533E85;
+  color: #000000;
+  background-color: orange;
 }
 
 .game .game-name{
@@ -179,63 +150,130 @@ video{
 
 .list-of-games{
   max-width: 100%;
-  margin-left: 10px;
 }
 
 .list-of-games .game{
-  max-width: 98%;
+  max-width: 100%;
   margin: auto;
-  margin-left: 1.5%;
-  margin-right: 1.5%;
   margin-bottom: 1%;
-
-  background-color: #ddffe6;
   font-size: 19px;
 
-  border: solid 11px #488FB1;
+  background-color: green;
+}
+
+.external-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align items to the right */
+  height: 100%; /* Ensure the container takes the full height of the topbar */
+}
+
+.external-links .link {
+  margin-left: 10px; /* Add some spacing between links */
+  max-height: 100%; /* Ensure the links do not exceed the height of the topbar */
+  padding-top: 8px;
+  display: flex;
+  align-items: center; /* Center the content vertically */
+}
+
+img.linkimg {
+  max-height: 100%; /* Ensure the images do not exceed the height of the topbar */
+  width: auto; /* Maintain aspect ratio */
+}
+
+img.linkimg:hover {
+  filter: hue-rotate(250deg) saturate(60%); /* Remove filter on hover to show original color */
+}
+
+.navbar .dropbtn {
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-size: 19px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  color: #446E4A;
+  background-color: #babea9;
   border-radius: 5px;
-  border-style: ridge;
+  border: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  width: 200px; /* Set a fixed width */
+  height: 50px; /* Set a fixed height */
+  line-height: 30px; /* Center text vertically */
 }
 
-.external-links{
+.navbar .dropbtn:hover {
+  border-color: #91775A;
+  background-color: #D9B186;
+}
+
+.navbar {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown {
+  display: none;
   position: absolute;
-  max-width: 70%;
-  height: 5%;
-  max-height: 5%;
-  right: 1%;
-  /*margin-right: 2%;*/
-  margin-top: 0.5%;
-  display: inline-block;
-  horiz-align: right;
+  margin-top: -3px;
+  left: 0; /* Align dropdown with the button */
+  min-width: 200px; /* Set the same width as the button */
+  z-index: 1;
 }
 
-.link{
-  display: inline-block;
-  horiz-align: right;
-  height: 1400%;
-  margin-left: 5px;
+.dropdown a {
+  display: block; /* Ensure each item is on a new line */
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-size: 16px;
+  color: #446E4A;
+  background-color: #babea9;
+  text-decoration: none;
+  text-align: center;
+  width: 200px; /* Set a fixed width */
+  border-bottom: black 2px solid; /* Add a border to separate items */
 }
 
-img.linkimg{
-  width: 100%;
-  height: 100%;
+.dropdown a:hover {
+  border-color: #91775A;
+  background-color: #D9B186;
+}
+
+.navbar:hover .dropdown {
+  display: block;
+}
+
+.resume-button .button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-left: 10px;
+  font-size: 19px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #446E4A;
+  background-color: #babea9;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 200px;
+  height: 50px; /* Set a fixed height */
+  line-height: 30px; /* Center text vertically */
+}
+
+.resume-button .button:hover {
+  border-color: #91775A;
+  background-color: #D9B186;
 }
 
 .welcome{
   display: inline-block;
   width: 70%;
-  margin-left: 1.5%;
-  margin-top: 0.4%;
-  margin-bottom: 0.4%;
 }
 
 .introduction{
-  font-size: 24px;
-  margin-left: 1.5%;
-  margin-right: 3%;
-  margin-top: 0.1%;
+  font-size: 18px;
   max-width: 100%;
-  color: #533E85;
+  color: #191833;
 }
 
 .team-members{
@@ -259,6 +297,21 @@ img.linkimg{
   vertical-align: top;
 }
 
+.contact-me {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.contact-me h2 {
+  margin-bottom: 10px;
+}
+
+.contact-me p {
+  font-size: 18px;
+}
+
 a:link {
   text-decoration: underline;
 }
@@ -273,4 +326,31 @@ a:hover {
 
 a:active {
   text-decoration: underline;
+}
+
+.sidenav{
+  height: 100%;
+  width: 15vw;
+  padding-top: 100px;
+  position: fixed;
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top*/
+  left: 0;
+  background-color: #4FD3C4;
+  overflow-x: hidden; /* disable horizontal scroll*/
+  overflow-y: scroll;
+  /*padding-top: 1%;*/
+  transition: 0.2s;
+}
+
+.sidenav a{
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #533E85;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #488FB1;
 }

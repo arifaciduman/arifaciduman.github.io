@@ -6,19 +6,17 @@
   <meta charset="UTF-8">
   <title>Arif's Portfolio</title>
   <link rel="icon" type="image/png" href="site-icon.png">
+  <link rel="stylesheet" type="text/css" href="main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     $(document).ready(function(){
       $("a").on('click', function(event) {
-
         if (this.hash !== "") {
           event.preventDefault();
           var hash = this.hash;
-
           $('html, body').animate({
             scrollTop: $(hash).offset().top
           }, 800, function(){
-
             window.location.hash = hash;
           });
         }
@@ -28,63 +26,71 @@
 </head>
 
 <body style="background-color: #C1F8CF">
-<div ID="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" style="text-decoration: none" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="logo"><a href="#" style="text-decoration: none">Pro<span>jects</span></a></div>
-  <a href="#cardbuster" style="text-decoration: none">Cardbuster</a>
-  <a href="#chasing-after-the-light" style="text-decoration: none">Chasing After the Light</a>
-  <a href="#back-to-hometown" style="text-decoration: none">Back to Hometown</a>
-  <a href="#unreliable-artifact" style="text-decoration: none">(Un)reliable Artifact</a>
-  <a href="#need-more-space" style="text-decoration: none">Need More Space</a>
-  <a href="#life-socks" style="text-decoration: none">Life Socks</a>
-</div>
+  <!-- <div id="mySidenav" class="sidenav">
+    <div class="logo"><a href="#" style="text-decoration: none">Pro<span>jects</span></a></div>
+    <a href="#cardbuster" style="text-decoration: none">Cardbuster</a>
+    <a href="#chasing-after-the-light" style="text-decoration: none">Chasing After the Light</a>
+    <a href="#back-to-hometown" style="text-decoration: none">Back to Hometown</a>
+    <a href="#unreliable-artifact" style="text-decoration: none">(Un)reliable Artifact</a>
+    <a href="#need-more-space" style="text-decoration: none">Need More Space</a>
+    <a href="#life-socks" style="text-decoration: none">Life Socks</a>
+  </div> -->
 
-<div class="topbar">
-  <button class="openbtn" onclick="openNav()">☰</button>
-  <div class="external-links">
-    <div class="link">
-      <a href="https://arifacid.itch.io/" target="_blank"><img class="linkimg" alt="Itch.io" src="images/itchiolg.png" height="35" width="35"></a><br/>
+  <div class="topbar">
+    <div class="name-role">
+      <div class="name"><a href="#" style="text-decoration: none; color: inherit;">Ahmet Arif Acıduman</a></div>
+      <div class="role">Gameplay Programmer</div>
     </div>
-    <div class="link">
-      <a href="https://globalgamejam.org/users/arifaciduman" target="_blank"><img class="linkimg" alt="Global Game Jam" src="images/ggjlg.png" height="35" width="35"></a>
-    </div>
-    <div class="link">
-      <a href="https://ldjam.com/users/arifacid/games" target="_blank"><img class="linkimg" alt="Ludum Dare" src="images/ldlogo.png" height="35" width="35"></a>
-    </div>
-    <div class="link">
-      <a href="https://twitter.com/VikkaGames" target="_blank"><img class="linkimg" alt="Twitter" src="images/twitterlg.png" height="35" width="35"></a><br/>
-    </div>
-    <div class="link">
-      <a href="https://www.instagram.com/vikkagames/" target="_blank"><img class="linkimg" alt="Instagram" src="images/instalg.png" height="35" width="35"></a>
+    <div class="external-links">
+      <!-- <div class="link">
+        <a href="https://arifacid.itch.io/" target="_blank"><img class="linkimg" alt="Itch.io" src="images/itchiolg.png" height="35" width="35"></a><br/>
+      </div>
+      <div class="link">
+        <a href="https://globalgamejam.org/users/arifaciduman" target="_blank"><img class="linkimg" alt="Global Game Jam" src="images/ggjlg.png" height="35" width="35"></a>
+      </div>
+      <div class="link">
+        <a href="https://ldjam.com/users/arifacid/games" target="_blank"><img class="linkimg" alt="Ludum Dare" src="images/ldlogo.png" height="35" width="35"></a>
+      </div> -->
+      <div class="link">
+        <a href="www.linkedin.com/in/ahmet-arif-aciduman" target="_blank"><img class="linkimg" alt="LinkedIn" src="images/linkedinlg.png" height="49" width="49"></a><br/>
+      </div>
+      <div class="navbar">
+        <button class="dropbtn">My Works</button>
+        <div class="dropdown">
+          <a href="https://arifacid.itch.io/" target="_blank">Itch.Io</a>
+          <a href="https://globalgamejam.org/users/arifaciduman" target="_blank">Global Game Jam</a>
+          <a href="https://ldjam.com/users/arifacid/games" target="_blank">Ludum Dare</a>
+        </div>
+      </div>
+      <div class="resume-button">
+        <a href="https://drive.google.com/file/d/1kf_kcsTp-64elSsIpBDKYQ5DQpvmhNB9/view?usp=sharing" target="_blank" class="button">
+          <img src="images/downloadimg.png" alt="Download" style="height: 20px; width: 20px; vertical-align: middle; margin-right: 5px;">
+          Resume
+        </a>
+      </div>
     </div>
   </div>
-</div>
 
 <div ID="main" class="main" >
   <div id="about-me" class="contents">
     <div class="welcome">
-      <h1>Hey, check out my portfolio!</h1>
+      <h2>About me</h2>
     </div>
     <div class="introduction">
-      <p>I am Arif. I like to develop and play games. I mainly do programming and game design in projects, but lately I
-        have been dabbling in VFX. I have participated in Global Game Jam, Ludum Dare and even smaller itch.io game jams.
-        I also have been playing the guitar and bass since I can remember. I love both playing and Dungeon Mastering
-        tabletop RPGs and board games including D&D, Magic the Gathering, etc.
+      <p>Hi! I am Arif. I have been developing video games for the past 5+ years. I am mainly a programmer and game designer,
+        but I am also working on VFX. I started game development by participating in game jams such as Global Game Jam, Ludum 
+        Dare and even smaller itch.io game jams. In my free time I like to play music, cook, and play tablotop games/rpgs.
       </p>
     </div>
   </div>
   <div class="games">
-    <div class="works-below">
-      <p> You can see my CV here: <a href = "https://drive.google.com/file/d/1omF3u1p-ZI-FufTilOdIwmZg482uK1uB/view?usp=sharing" style="color: #488FB1" target="_blank">CV</a></p>
-      <p>You can see the games I have worked on down below.</p>
-    </div>
     <div class="list-of-games">
       <div class="game">
         <div id = "cardbuster" class="game-name">
-          <h2>Cardbuster</h2>
+          <h2>Card Buster</h2>
         </div>
         <div class="game-info">
-          <p>Cardbuster is a merge between action-adventure and deckbuilder genres. In Cardbuster, use Cards to gain abilities.
+          <p>Card Buster is a merge between action-adventure and deckbuilder genres. In Cardbuster, use Cards to gain abilities.
             Casting a card fills the matching ability slot to use for a period of time to either defeat enemies.
             Like classic deckbuilder games you mulligan/draw your hand before a combat begins.<br>
             <br></p>
@@ -95,30 +101,19 @@
               <source src ="images/Combat.webm" type="video/webm"/>
             </video>
           </div>
-          <div class="screenshot">
-            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/haymaker_showcase.webm" type="video/webm"/>
-            </video>
-          </div>
-          <div class="screenshot">
-            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/Deckbuild.webm" type="video/webm"/>
-            </video>
-          </div>
         </div>
         <div class="game-info">
           <div class="my-contributions">
             <h3>My contributions</h3>
-            <p>After implementing basic movement I have developed the architecture of the ability system. I have used
-              Scriptable Objects as a way to store information about the abilities' common elements<br>
-              <br>
-              I also make VFX for abilities.</p>
+            <ul> 
+              <li>All development/programming of the game in Unity3D</li>
+              <li>Card ability system, including specific combos and synergies</li>
+              <li>Finite state machines for both player logic and enemy AI</li>
+              <li>Progression and upgrade systems for Player and the Card system</li>
+              <li>VFX implementation</li>
+              <li>Demo release and Steamworks experience</li>
+            </ul>
           </div>
-          <div class="team-members">
-            <h3>Contributors</h3>
-            <p>Ahmet Arif Acıduman (programmer)<br> Alara Çiloğlu (artist)<br>Kaan Çulha (sound)</p>
-          </div>
-          </p>
         </div>
       </div>
       <div class="game">
@@ -136,36 +131,21 @@
         <div class="game-graphics">
           <div class="screenshot">
             <video muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/catl1.webm" type="video/webm"/>
-            </video>
-          </div>
-          <div class="screenshot">
-            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/catl2.webm" type="video/webm"/>
-            </video>
-          </div>
-          <div class="screenshot">
-            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/catl3.webm" type="video/webm"/>
+              <source src="images/catl1.webm" type="video/webm"/>
             </video>
           </div>
         </div>
         <div class="game-info">
           <div class="my-contributions">
-            <h3>My contributions</h3>
-            <p>I did all the programming and level design of this game using Unity3D.<br>For the movement of light I have
-              prepared a rail system by setting up a list of points and increasing the index of the nextPoint according
-              to the proximity of the light to the current nextPoint. After checking if the player is close enough to the
-              light by a simple distance calculation I had to determine if the player was in the dark or not by casting
-              rays to see if there was an obstacle between the light and the player. I have used experimental 2d light
-              feature of Unity3D's Universal Render Pipeline to achieve the desired light/dark effect.</p>
-          </div>
-          <div class="team-members">
-            <h3>Contributors</h3>
-            <p>Ahmet Arif Acıduman (programmer)<br>Alara Çiloğlu (artist)<br>Barış Yaman (sound)<br>Sercan Uysal (artist)</p>
+            <h3>My contributions/lessons learned</h3>
+            <ul>
+              <li>All the programming and level design using Unity3D.</li>
+              <li>Rail system for the movement of light object</li>
+              <li>Scoring system by checking variables like the Player distance from the light, is there any obstacles between the Player and the light</li>
+              <li>Learned the experimental 2D light feature of Unity3D's Universal Render Pipeline to achieve the desired light/dark effect</li>
+            </ul>
           </div>
         </div>
-      </div>
       <div class="game">
         <div id="back-to-hometown" class="game-name">
           <h2>Back to Hometown</h2>
@@ -186,73 +166,16 @@
               <source src ="images/bth1.webm" type="video/webm"/>
             </video>
           </div>
-          <div class="screenshot">
-            <video muted loop controls="controls" onclick="this.play()">
-              <source src ="images/bth2.webm" type="video/webm"/>
-            </video>
-          </div>
-          <div class="screenshot">
-            <video muted loop controls="controls" onclick="this.play()">
-              <source src ="images/bth3.webm" type="video/webm"/>
-            </video>
-          </div>
         </div>
         <div class="game-info">
           <div class="my-contributions">
             <h3>My contributions</h3>
-            <p>I did programming, game design and level design of this game.<br> I like the alien corruption theme and
-              wanted to create this effect not just visually but also gameplay-wise. I have used Unity3D's Tilemap feature
-              to have a 2D map. The starting corruption point is the tile under the center of the Boss. From that point in
-              random intervals all adjacent tiles are corrupted one by one, meaning their sprites are changed and tags are
-              set to "Corrupted". Portals check under them to see if the tag of tile they are on is "Corrupted". If it is
-              they activate and start spawning mobs. "Cleanse" skill (video 2) works in a similar way by setting the tags
-              of tiles under and adjacent to the Player to "Normal" and changing their sprite to a flowery one. Monster AI
-              is a simple Move, Attack, Cooldown system.</p>
-          </div>
-          <div class="team-members">
-            <h3>Contributors</h3>
-            <p>Ahmet Arif Acıduman (programmer)<br>Alara Çiloğlu (artist)<br>Kadircan Aksoy (sound)</p>
-          </div>
-        </div>
-      </div>
-      <div class="game">
-        <div id="unreliable-artifact" class="game-name">
-          <h2>(Un)reliable Artifact</h2>
-        </div>
-        <div class="game-info">
-          <p>(Un)reliable Artifact is Ludum Dare 49 (theme: Unstable) entry for our team. In this game Player has an unstable artifact which
-            explodes in random intervals cleansing the corrupted buildings and road tiles in range (video 1). With every cleansed
-            building/tile Player receives points. While cleansing a building restores it, cleansing a road tile destroys the
-            tile (video 2), so Player needs to be careful to not fall into the abyss through destroyed parts of the road (video 3).<br>
-            <br></p>
-        </div>
-        <div class="game-graphics">
-          <div class="screenshot">
-            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/ua1.webm" type="video/webm"/>
-            </video>
-          </div>
-          <div class="screenshot">
-            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/ua2.webm" type="video/webm"/>
-            </video>
-          </div>
-          <div class="screenshot">
-            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/ua3.webm" type="video/webm"/>
-            </video>
-          </div>
-        </div>
-        <div class="game-info">
-          <div class="my-contributions">
-            <h3>My contributions</h3>
-            <p>I did all the programming and level design while taking part in the game design process.<br>Corruption effect
-              is achieved in a similar manner to "Back to Hometown". The difference is all the buildings and road pieces
-              are stored in "Roads" and "Buildings" lists at the start of the game and removed from it when it gets corrupted.</p>
-          </div>
-          <div class="team-members">
-            <h3>Contributors</h3>
-            <p>Ahmet Arif Acıduman (programmer)<br>Alara Çiloğlu (artist)<br>Kadircan Aksoy (sound)</p>
+            <ul>
+              <li>All the programming and level design using Unity3D.</li>
+              <li>Tilemap system for the map and the corruption effect</li>
+              <li>Corruption affects both the visuals and the gameplay mechanics</li>
+              <li>Monster AI</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -274,30 +197,17 @@
               <source src ="images/nms3.webm" type="video/webm"/>
             </video>
           </div>
-          <div class="screenshot">
-            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/nms2.webm" type="video/webm"/>
-            </video>
-          </div>
-          <div class="screenshot">
-            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/nms1.webm" type="video/webm"/>
-            </video>
-          </div>
         </div>
         <div class="game-info">
           <div class="my-contributions">
             <h3>My contributions</h3>
-            <p>I have programmed monster AI so that they don't wander under the sun themselves and chase after the Player
-              when They get in range (video 2). Since the planet Player is on is stationary, Monster AI checks the
-              "Vector3 nextPoint" 3d position vector they will move next to see if the horizontal x of the nextPoint
-              falls in positive values, if it does then the function determines the nextPoint again randomly. I also
-              implemented the lighting settings and movement of the sun and moon around the planet (video 3).</p>
-          </div>
-          <div class="team-members">
-            <h3>Contributors</h3>
-            <p>Ahmet Arif Acıduman (programmer)<br>Akın Özen (programmer)<br>Alara Çiloğlu (artist)<br>Batuhan Çalışkan (programmer)<br>
-            Elçin Kılıç (artist)<br>İsmail Temirci(artist)<br>Sercan Uysal (artist)<br>Yamanefe Uğurlu (sound)</p>
+            <ul>
+              I have programmed monster AI so that they don't wander under the sun themselves and chase after the Player when 
+              They get in range (video 2). Since the planet Player is on is stationary, Monster AI checks the "Vector3 nextPoint" 
+              3d position vector they will move next to see if the horizontal x of the nextPoint falls in positive values, if it 
+              does then the function determines the nextPoint again randomly. I also implemented the lighting settings and movement 
+              of the sun and moon around the planet (video 3).
+            </ul>
           </div>
         </div>
       </div>
@@ -319,47 +229,53 @@
               <source src ="images/ls1.webm" type="video/webm"/>
             </video>
           </div>
-          <div class="screenshot">
-            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/ls2.webm" type="video/webm"/>
-            </video>
+        </div>
+        <div class="game-info">
+          <div class="my-contributions">
+            <h3>My contributions</h3>
+            <ul>
+              I took part in programming and level design of this game. I also did the implementation of the level in Unity3D.
+            </ul>
           </div>
+        </div>
+      </div>
+      <div class="game">
+        <div id="unreliable-artifact" class="game-name">
+          <h2>(Un)reliable Artifact</h2>
+        </div>
+        <div class="game-info">
+          <p>(Un)reliable Artifact is Ludum Dare 49 (theme: Unstable) entry for our team. In this game Player has an unstable artifact which
+            explodes in random intervals cleansing the corrupted buildings and road tiles in range (video 1). With every cleansed
+            building/tile Player receives points. While cleansing a building restores it, cleansing a road tile destroys the
+            tile (video 2), so Player needs to be careful to not fall into the abyss through destroyed parts of the road (video 3).<br>
+            <br></p>
+        </div>
+        <div class="game-graphics">
           <div class="screenshot">
             <video muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/ls3.webm" type="video/webm"/>
+              <source src ="images/ua1.webm" type="video/webm"/>
             </video>
           </div>
         </div>
         <div class="game-info">
           <div class="my-contributions">
             <h3>My contributions</h3>
-            <p>I took part in programming and level design of this game. I also did the implementation of the level in Unity3D.</p>
-          </div>
-          <div class="team-members">
-            <h3>Contributors</h3>
-            <p>Ahmet Arif Acıduman (programmer)<br>Alara Çiloğlu (artist)<br>Batuhan Çalışkan (programmer)<br>
-              Filiz Yeniköylü (artist)<br>Yamanefe Uğurlu (sound, art)</p>
+            <ul>
+              I did all the programming and level design while taking part in the game design process.
+              Corruption effect is achieved in a similar manner to "Back to Hometown". The difference 
+              is all the buildings and road pieces are stored in "Roads" and "Buildings" lists at the 
+              start of the game and removed from it when it gets corrupted.
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div style="text-align: center;color: #533E85"> <p>Ahmet Arif Acıduman 2022</p> </div>
+  <div class="contact-me">
+    <h2>Contact Me</h2>
+    <p>If you want to contact me, you can do so here: <a href="mailto:arifaciduman@gmail.com">arifaciduman@gmail.com</a>!</p>
+  </div>
+  <div style="text-align: center;color: #533E85"> <p>Ahmet Arif Acıduman 2022-2025</p> </div>
 </div>
-
-<script>
-/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-function openNav() {
-document.getElementById("mySidenav").style.width = "250px";
-// document.getElementById("main").style.marginLeft = "250px";
-}
-
-/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-function closeNav() {
-document.getElementById("mySidenav").style.width = "0";
-document.getElementById("main").style.marginLeft = "0";
-}
-</script>
-
 </body>
 </html>
