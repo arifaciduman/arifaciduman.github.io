@@ -11,7 +11,7 @@ html {
 }
 
 .topbar {
-  background-color: #ededed;
+  background-color: rgba(237, 237, 237, 0.8); /* Lower alpha value */
   position: fixed;
   width: 100%;
   height: 60px;
@@ -19,11 +19,11 @@ html {
   z-index: 2;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Distribute space between items */
-  padding-left: 15vw; /* Add some padding to the left */
-  padding-right: 15vw;
-  font-family: 'Ubuntu', sans-serif;
 
+  justify-content: space-between; /* Distribute space between items */
+  padding-left: 5vw; /* Add some padding to the left */
+  padding-right: 5vw;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .name-role {
@@ -34,21 +34,48 @@ html {
 .name {
   font-size: 26px; /* Adjust the font size as needed */
   font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .role {
   font-size: 20px; /* Adjust the font size as needed */
+  font-family: 'Ubuntu', sans-serif;
 }
 
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+@media screen and (max-width: 800px) {
+  .name {
+    font-size: 22px; /* Adjust the font size for medium screens */
+  }
+
+  .role {
+    font-size: 18px; /* Adjust the font size for medium screens */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .name {
+    font-size: 20px; /* Adjust the font size for smaller screens */
+  }
+
+  .role {
+    font-size: 16px; /* Adjust the font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .name {
+    font-size: 18px; /* Adjust the font size for very small screens */
+  }
+
+  .role {
+    font-size: 14px; /* Adjust the font size for very small screens */
+  }
 }
 
 .main{
   /*padding: 0% 0.5%;*/
-  padding-left: 15vw;
-  padding-right: 15vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
   padding-top: 60px;
   transition: margin-left .5s;
   font-family: 'Ubuntu', sans-serif;
@@ -67,8 +94,8 @@ html {
 .sidenav .logo a{
   color: #533E85;
   font-size: 33px;
-  font-width: 600;
   font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 @media screen and (max-height: 450px) {
@@ -83,9 +110,9 @@ h1, h2, h3 {
 }
 
 .works-below{
-  margin-left: 2.1%;
   margin-bottom: 1.5%;
   font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
   color: #ffffff;
 }
 
@@ -93,6 +120,7 @@ h1, h2, h3 {
   margin-top: 1%;
   margin-bottom: 1%;
   font-size: 24px;
+  font-family: 'Ubuntu', sans-serif;
   color: #000000;
 }
 
@@ -100,14 +128,18 @@ h1, h2, h3 {
   max-width: 100%;
   align-content: center;
 }
+
 .screenshot{
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   display: block;
   text-align: center;
-  }
+}
 
-.video{
+.minor-video{
+  margin: 0 auto;
+  display: block;
+  text-align: center;
 }
 
 video::-webkit-media-slider-thumb {
@@ -121,16 +153,30 @@ video{
   width: 100%;
 }
 
+.card-buster-zone{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  font-size: 16px;
+}
+
 .game{
   border-bottom: 3px solid black; /* Add this line for the separator */
   padding-bottom: 20px; /* Add some padding for spacing */
   margin-bottom: 20px; /* Add some margin for spacing */
 }
+.game:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.game:first-child{
+  border-top: 3px solid black;
+}
 
 .game .game-info{
   max-width: 100%;
-  margin-left: 2%;
-  margin-right: 2%;
   margin-top: 2%;
   margin-bottom: 1%;
   text-align: justify;
@@ -139,20 +185,21 @@ video{
 }
 
 .game .game-name{
-  padding-left: 2%;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .list-of-games{
-  max-width: 100%;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 .list-of-games .game{
   max-width: 100%;
   margin: auto;
   margin-bottom: 1%;
-  font-size: 19px;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .external-links {
@@ -165,9 +212,8 @@ video{
 .external-links .link {
   margin-left: 10px; /* Add some spacing between links */
   max-height: 100%; /* Ensure the links do not exceed the height of the topbar */
-  padding-top: 8px;
   display: flex;
-  align-items: center; /* Center the content vertically */
+  align-items: end; /* Center the content vertically */
 }
 
 img.linkimg {
@@ -261,17 +307,19 @@ img.linkimg:hover {
 
 .welcome{
   display: inline-block;
-  width: 70%;
+  margin-top: 2%;
 }
 
 .introduction{
   font-size: 18px;
+  font-family: 'Ubuntu', sans-serif;
   max-width: 100%;
   color: #191833;
 }
 
 .team-members{
   font-size: 17px;
+  font-family: 'Ubuntu', sans-serif;
   margin-top: 1%;
   max-width: 26%;
   text-align: justify;
@@ -281,21 +329,38 @@ img.linkimg:hover {
 }
 
 .my-contributions{
-  max-width: 65%;
-  width: 66%;
-  margin-right: 3%;
   margin-top: 1%;
+  padding-left: 20px;
   text-align: justify;
   text-justify: inter-word;
   display: inline-block;
   vertical-align: top;
 }
 
+.minor-contributions{
+  border-top: black 2px solid;
+  padding-top: 30px;
+}
+
+.minor-games {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.minor-game {
+  flex: 1 1 30%; /* Adjust the percentage as needed */
+  margin-top: 10px; /* Adjust the margin as needed */
+  margin-right: 25px;
+  margin-left: 25px;
+  font-size: 13px;
+}
+
+
 .contact-me {
   text-align: center;
-  margin-top: 40px;
-  padding: 20px;
-  background-color: #f2f2f2;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: #ededed;
 }
 
 .contact-me h2 {
@@ -330,7 +395,7 @@ a:active {
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top*/
   left: 0;
-  background-color: #4FD3C4;
+  background-color: red;
   overflow-x: hidden; /* disable horizontal scroll*/
   overflow-y: scroll;
   /*padding-top: 1%;*/
@@ -347,4 +412,10 @@ a:active {
 
 .sidenav a:hover {
   color: #488FB1;
+}
+
+.bottom-bar{
+  text-align: center;
+  color: #533E85;
+  padding-bottom: 20px;
 }

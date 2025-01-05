@@ -52,7 +52,7 @@
         <a href="https://ldjam.com/users/arifacid/games" target="_blank"><img class="linkimg" alt="Ludum Dare" src="images/ldlogo.png" height="35" width="35"></a>
       </div> -->
       <div class="link">
-        <a href="www.linkedin.com/in/ahmet-arif-aciduman" target="_blank"><img class="linkimg" alt="LinkedIn" src="images/linkedinlg.png" height="49" width="49"></a><br/>
+        <a href="www.linkedin.com/in/ahmet-arif-aciduman" target="_blank"><img class="linkimg" alt="LinkedIn" src="images/linkedinlg.png" height="20" width="20"></a><br/>
       </div>
       <div class="navbar">
         <button class="dropbtn">My Works</button>
@@ -84,52 +84,73 @@
     </div>
   </div>
   <div class="games">
-    <div class="list-of-games">
-      <div class="game">
-        <div id = "cardbuster" class="game-name">
+    <div class="card-buster-zone">
+      <div class="card-buster">
+        <div class="card-buster-title">
           <h2>Card Buster</h2>
         </div>
-        <div class="game-info">
+        <div class="card-buster-info">
           <p>Card Buster is a merge between action-adventure and deckbuilder genres. In Cardbuster, use Cards to gain abilities.
             Casting a card fills the matching ability slot to use for a period of time to either defeat enemies.
             Like classic deckbuilder games you mulligan/draw your hand before a combat begins.<br>
             <br></p>
         </div>
-        <div class="game-graphics">
-          <div class="screenshot">
+        <div class="card-buster-graphics">
+          <div class="card-buster-screenshot">
             <video loop preload="metadata" controls="controls" onclick="this.play()">
               <source src ="images/Combat.webm" type="video/webm"/>
             </video>
           </div>
         </div>
+        <div class="card-buster-info">
+          <div class="my-contributions">
+            <h3>My contributions</h3>
+            <ul> 
+              <li>All development/programming of the game in Unity3D</li>
+              <li>Card ability system, including specific combos and synergies</li>
+              <li>Finite state machines for both player logic and enemy AI</li>
+              <li>Progression and upgrade systems for Player and the Card system</li>
+              <li>VFX implementation</li>
+              <li>Demo release and Steamworks experience</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="list-of-games">
+      <div class="game">
+        <div id="the-zamio" class="game-name">
+          <h2>The Zamio</h2>
+        </div>
+        <div class="game-info">
+          <p>Chasing After the Light is 2022 Global Game Jam (theme: Duality) entry game for our team. Chasing After the Light is a 2D
+            platformer game in which Player tries to stay in the light radius while the light object moves forward on its
+            own (video 1) to keep the sanity level high. Player loses sanity if they stay out of the light (video 2). If the sanity
+            bar drops to zero or player hits the spikes the game ends (video 3). Player gains points as long as they stay alive.
+            Player increases their score multiplier proportional to how close they are to the light source.<br>
+            <br></p>
+        </div>
+        <div class="game-graphics">
+          <div class="screenshot">
+            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
+              <source src="images/ZAM.mp4" type="video/mp4"/>
+            </video>
+          </div>
+        </div>
         <div class="game-info">
           <div class="my-contributions">
-            <h3>My contributions</h3>
-            <ul> 
-              <li>All development/programming of the game in Unity3D</li>
-              <li>Card ability system, including specific combos and synergies</li>
-              <li>Finite state machines for both player logic and enemy AI</li>
-              <li>Progression and upgrade systems for Player and the Card system</li>
-              <li>VFX implementation</li>
-              <li>Demo release and Steamworks experience</li>
+            <h3>My contributions/lessons learned</h3>
+            <ul>
+              <li>All the programming and level design using Unity3D.</li>
+              <li>Rail system for the movement of light object</li>
+              <li>Scoring system by checking variables like the Player distance from the light, is there any obstacles between the Player and the light</li>
+              <li>Learned the experimental 2D light feature of Unity3D's Universal Render Pipeline to achieve the desired light/dark effect</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="game-info">
-          <div class="my-contributions">
-            <h3>My contributions</h3>
-            <ul> 
-              <li>All development/programming of the game in Unity3D</li>
-              <li>Card ability system, including specific combos and synergies</li>
-              <li>Finite state machines for both player logic and enemy AI</li>
-              <li>Progression and upgrade systems for Player and the Card system</li>
-              <li>VFX implementation</li>
-              <li>Demo release and Steamworks experience</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+
       <div class="game">
         <div id="chasing-after-the-light" class="game-name">
           <h2>Chasing After the Light</h2>
@@ -160,6 +181,8 @@
             </ul>
           </div>
         </div>
+      </div>
+
       <div class="game">
         <div id="back-to-hometown" class="game-name">
           <h2>Back to Hometown</h2>
@@ -193,6 +216,7 @@
           </div>
         </div>
       </div>
+
       <div class="game">
         <div id="need-more-space" class="game-name">
           <h2>Need More Space</h2>
@@ -225,34 +249,7 @@
           </div>
         </div>
       </div>
-      <div class="game">
-        <div id="life-socks" class="game-name">
-          <h2>Life Socks</h2>
-        </div>
-        <div class="game-info">
-          <p>Life Socks is 2021 Global Game Jam (theme: Lost & Found) entry game for our team. Life Socks is a 2D-platformer-puzzle game in
-            which Player controls a sock who has lost their pair trying to find them. Player has 2 item slots that they
-            can carry either keys to open doors or power-ups (video 1). There are power-ups such as 'Feet' which enable
-            Player to walk faster/jump and if Player has 2 'Feet' items They can double-jump (video 2), 'Umbrella' item
-            enables Player to glide long distances (video 3).<br>
-            <br></p>
-        </div>
-        <div class="game-graphics">
-          <div class="screenshot">
-            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
-              <source src ="images/LS.mp4" type="video/mp4"/>
-            </video>
-          </div>
-        </div>
-        <div class="game-info">
-          <div class="my-contributions">
-            <h3>My contributions</h3>
-            <ul>
-              I took part in programming and level design of this game. I also did the implementation of the level in Unity3D.
-            </ul>
-          </div>
-        </div>
-      </div>
+
       <div class="game">
         <div id="unreliable-artifact" class="game-name">
           <h2>(Un)reliable Artifact</h2>
@@ -285,11 +282,73 @@
       </div>
     </div>
   </div>
+  <div class="minor-contributions">
+    <h2>Minor Contributions</h2>
+    <div class="minor-games">
+      <div class="minor-game">
+        <div id="life-socks" class="game-name">
+          <h2>Life Socks</h2>
+        </div>
+        <div class="game-info">
+          <p>Life Socks is 2021 Global Game Jam (theme: Lost & Found) entry game for our team. Life Socks is a 2D-platformer-puzzle game in
+            which Player controls a sock who has lost their pair trying to find them. Player has 2 item slots that they
+            can carry either keys to open doors or power-ups (video 1). There are power-ups such as 'Feet' which enable
+            Player to walk faster/jump and if Player has 2 'Feet' items They can double-jump (video 2), 'Umbrella' item
+            enables Player to glide long distances (video 3).<br>
+            <br></p>
+        </div>
+        <div class="game-graphics">
+          <div class="minor-video">
+            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
+              <source src ="images/LS.mp4" type="video/mp4"/>
+            </video>
+          </div>
+        </div>
+        <div class="game-info">
+          <div class="my-contributions">
+            <h3>My contributions</h3>
+            <ul>
+              I took part in programming and level design of this game. I also did the implementation of the level in Unity3D.
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- insert another game here if needed -->
+      
+      <div class="minor-game">
+        <div id="break-time" class="game-name">
+          <h2>Break Time</h2>
+        </div>
+        <div class="game-info">
+          <p>info about breaktime<br>
+            <br></p>
+        </div>
+        <div class="game-graphics">
+          <div class="minor-video">
+            <video muted loop preload="metadata" controls="controls" onclick="this.play()">
+              <source src ="images/BT.mp4" type="video/mp4"/>
+            </video>
+          </div>
+        </div>
+        <div class="game-info">
+          <div class="my-contributions">
+            <h3>My contributions</h3>
+            <ul>
+              I took part in programming and level design of this game. I also did the implementation of the level in Unity3D.
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="contact-me">
     <h2>Contact Me</h2>
     <p>If you want to contact me, you can do so here: <a href="mailto:arifaciduman@gmail.com">arifaciduman@gmail.com</a>!</p>
   </div>
-  <div style="text-align: center;color: #533E85"> <p>Ahmet Arif Acıduman 2022-2025</p> </div>
+  <div class="bottom-bar"> 
+    <p>Ahmet Arif Acıduman 2022-2025</p> 
+  </div>
 </div>
 </body>
 </html>
