@@ -11,19 +11,19 @@ html {
 }
 
 .name-role {
-  text-align: left; /* Align text to the left */
+  text-align: left;
 }
 
 .name {
-  font-size: 26px; /* Adjust the font size as needed */
+  font-size: 26px;
   font-weight: bold;
 }
 
 .role {
-  font-size: 20px; /* Adjust the font size as needed */
+  font-size: 20px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .name {
     font-size: 22px; /* Adjust the font size for medium screens */
   }
@@ -33,13 +33,23 @@ html {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .name {
-    font-size: 20px; /* Adjust the font size for smaller screens */
+    font-size: 18px; /* Adjust the font size for medium screens */
   }
 
   .role {
+    font-size: 14px; /* Adjust the font size for medium screens */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .name {
     font-size: 16px; /* Adjust the font size for smaller screens */
+  }
+
+  .role {
+    font-size: 12px; /* Adjust the font size for smaller screens */
   }
 }
 
@@ -91,6 +101,7 @@ html {
 .navbar .dropbtn:hover {
   border-color: #91775A;
   background-color: #D9B186;
+  border-bottom: #2b2b2b 2px solid;
 }
 
 .navbar {
@@ -117,7 +128,8 @@ html {
   text-decoration: none;
   text-align: center;
   width: 200px; /* Set a fixed width */
-  border-bottom: #2b2b2b 2px solid; /* Add a border to separate items */
+  border-bottom: #2b2b2b 1px solid;
+  border-top: #2b2b2b 1px solid;
 }
 
 .dropdown a:hover {
@@ -169,8 +181,8 @@ html {
 
 .main{
   /*padding: 0% 0.5%;*/
-  padding-left: 25vw;
-  padding-right: 25vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
   padding-top: 80px;
 
   font-family: 'Poppins', serif;
@@ -329,6 +341,10 @@ img.linkimg:hover {
   padding-top: 30px;
 }
 
+.minor-game .game-info{
+  font-weight: 300;
+}
+
 .minor-games {
   display: flex;
   flex-wrap: wrap;
@@ -351,6 +367,13 @@ li::before{
   font-weight: 200;;
 }
 
+.minor-game:first-child{
+  margin-left: 0;
+}
+
+.minor-game:last-child{
+  margin-right: 0;
+}
 
 .contact-me {
   text-align: center;
@@ -359,6 +382,7 @@ li::before{
 }
 
 .contact-me h2 {
+  margin-top: 6%;
   margin-bottom: 10px;
 }
 
@@ -412,6 +436,7 @@ a:active {
 
 .bottom-bar{
   text-align: center;
-  color: #9BCF96;
-  padding-bottom: 20px;
+  color: #333b35;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
