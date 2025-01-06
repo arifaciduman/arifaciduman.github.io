@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -10,36 +10,17 @@ html {
   scroll-behavior: smooth;
 }
 
-.topbar {
-  background-color: rgba(237, 237, 237, 0.8); /* Lower alpha value */
-  position: fixed;
-  width: 100%;
-  height: 60px;
-  top: 0;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-
-  justify-content: space-between; /* Distribute space between items */
-  padding-left: 5vw; /* Add some padding to the left */
-  padding-right: 5vw;
-  font-family: 'Ubuntu', sans-serif;
-}
-
 .name-role {
   text-align: left; /* Align text to the left */
-  color: #1f1f1f;
 }
 
 .name {
   font-size: 26px; /* Adjust the font size as needed */
   font-weight: bold;
-  font-family: 'Ubuntu', sans-serif;
 }
 
 .role {
   font-size: 20px; /* Adjust the font size as needed */
-  font-family: 'Ubuntu', sans-serif;
 }
 
 @media screen and (max-width: 800px) {
@@ -72,164 +53,29 @@ html {
   }
 }
 
-.main{
-  /*padding: 0% 0.5%;*/
-  padding-left: 5vw;
-  padding-right: 5vw;
-  padding-top: 60px;
-  transition: margin-left .5s;
-  font-family: 'Ubuntu', sans-serif;
-
-  text-align: justify;
-  text-justify: inter-word;
-
-  color: #1f1f1f;
-  background-color: #ededed;
-}
-
-.contents{
-  color: #51446E;
-}
-
-.sidenav .logo a{
-  color: #533E85;
-  font-size: 33px;
-  font-weight: bold;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 0%;}
-  .sidenav a {font-size: 0%;}
-}
-
-
-h1, h2, h3 {
-  font-family: 'Ubuntu', sans-serif;
-  color: #1f1f1f;
-}
-
-.works-below{
-  margin-bottom: 1.5%;
-  font-weight: bold;
-  font-family: 'Ubuntu', sans-serif;
-  color: #ffffff;
-}
-
-.games{
-  margin-top: 1%;
-  margin-bottom: 1%;
-  font-size: 24px;
-  font-family: 'Ubuntu', sans-serif;
-  color: #000000;
-}
-
-.game .game-graphics{
-  max-width: 100%;
-  align-content: center;
-}
-
-.screenshot{
+.topbar {
+  background-color: #333b35;
+  color: whitesmoke;
+  position: fixed;
   width: 100%;
-  margin: 0 auto;
-  display: block;
-  text-align: center;
-}
-
-.minor-video{
-  margin: 0 auto;
-  display: block;
-  text-align: center;
-}
-
-video::-webkit-media-slider-thumb {
-  display: none;
-}
-video::-webkit-media-slider-container{
-  display: none;
-}
-
-video{
-  width: 100%;
-}
-
-.card-buster-zone{
-  margin-top: 2%;
-  margin-bottom: 2%;
-  padding-left: 10vw;
-  padding-right: 10vw;
-  font-size: 16px;
-}
-
-.game{
-  border-bottom: 3px solid black; /* Add this line for the separator */
-  padding-bottom: 20px; /* Add some padding for spacing */
-  margin-bottom: 20px; /* Add some margin for spacing */
-}
-.game:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-}
-
-.game:first-child{
-  border-top: 3px solid black;
-}
-
-.game .game-info{
-  max-width: 100%;
-  margin-top: 2%;
-  margin-bottom: 1%;
-  text-align: justify;
-  text-justify: inter-word;
-  color: #000000;
-}
-
-.game .game-name{
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.list-of-games{
-  padding-left: 10vw;
-  padding-right: 10vw;
-}
-
-.list-of-games .game{
-  max-width: 100%;
-  margin: auto;
-  margin-bottom: 1%;
-  font-size: 16px;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-.external-links {
+  height: 80px;
+  top: 0;
+  z-index: 2;
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* Align items to the right */
-  height: 100%; /* Ensure the container takes the full height of the topbar */
-}
+  justify-content: space-between; /* Distribute space between items */
 
-.external-links .link {
-  margin-left: 10px; /* Add some spacing between links */
-  max-height: 100%; /* Ensure the links do not exceed the height of the topbar */
-  display: flex;
-  align-items: end; /* Center the content vertically */
-}
+  padding-left: 5vw; /* Add some padding to the left */
+  padding-right: 5vw;
 
-img.linkimg {
-  max-height: 100%; /* Ensure the images do not exceed the height of the topbar */
-  width: auto; /* Maintain aspect ratio */
-}
-
-img.linkimg:hover {
-  filter: hue-rotate(250deg) saturate(60%); /* Remove filter on hover to show original color */
+  font-family: 'Poppins', serif;
 }
 
 .navbar .dropbtn {
   padding: 10px 20px;
   margin-left: 10px;
   font-size: 19px;
-  font-family: 'Ubuntu', sans-serif;
+  
   font-weight: bold;
   color: #446E4A;
   background-color: #babea9;
@@ -271,7 +117,7 @@ img.linkimg:hover {
   text-decoration: none;
   text-align: center;
   width: 200px; /* Set a fixed width */
-  border-bottom: black 2px solid; /* Add a border to separate items */
+  border-bottom: #2b2b2b 2px solid; /* Add a border to separate items */
 }
 
 .dropdown a:hover {
@@ -307,19 +153,160 @@ img.linkimg:hover {
 
 .welcome{
   display: inline-block;
-  margin-top: 2%;
+  margin-top: 30px;
 }
 
 .introduction{
-  font-size: 18px;
-  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
   max-width: 100%;
-  color: #191833;
+  margin-bottom: 30px;
 }
 
+.contents{
+  border-bottom: #2b2b2b 1px solid;
+}
+
+
+.main{
+  /*padding: 0% 0.5%;*/
+  padding-left: 25vw;
+  padding-right: 25vw;
+  padding-top: 80px;
+
+  font-family: 'Poppins', serif;
+  font-weight: 300;
+
+  text-align: justify;
+  text-justify: inter-word;
+
+  background-color: whitesmoke;
+  color: #242523;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', serif;
+  color: #242523;
+}
+
+.works-below{
+  margin-bottom: 1.5%;
+  font-weight: bold;
+  color: #242523;
+}
+
+.games{
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size: 16px;
+  color: #242523;
+}
+
+.game-video{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.game-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.game-text{
+  flex: 1;
+}
+
+.game-graphics{
+  max-width: 100%;
+  align-content: center;
+
+  padding-top: 15px;
+
+  flex: 1;
+  margin-left: 20px; /* Adjust the margin as needed */
+}
+
+.minor-video{
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+video::-webkit-media-slider-thumb {
+  display: none;
+}
+video::-webkit-media-slider-container{
+  display: none;
+}
+
+video{
+  width: 100%;
+}
+
+.card-buster-zone{
+  margin-top: 1%;
+  padding-bottom: 20px;
+  border-top: 1px solid #2b2b2b;
+}
+.card-buster-title{
+  margin-top: 30px;
+  margin-bottom: 1%;
+}
+.game{
+  border-bottom: 1px solid #2b2b2b; /* Add this line for the separator */
+  padding-bottom: 20px; /* Add some padding for spacing */
+}
+.game:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.game:first-child{
+  border-top: 1px solid #2b2b2b;
+}
+
+.game .game-info{
+  max-width: 100%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.game-name{
+  margin-top: 20px;
+}
+
+.list-of-games .game{
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 1%;
+}
+
+.external-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align items to the right */
+  height: 100%; /* Ensure the container takes the full height of the topbar */
+}
+
+.external-links .link {
+  margin-left: 10px; /* Add some spacing between links */
+  max-height: 100%; /* Ensure the links do not exceed the height of the topbar */
+  display: flex;
+  padding-top: 7px;
+  align-items: end; /* Center the content vertically */
+}
+
+img.linkimg {
+  max-height: 100%; /* Ensure the images do not exceed the height of the topbar */
+  width: auto; /* Maintain aspect ratio */
+}
+
+img.linkimg:hover {
+  filter: hue-rotate(250deg) saturate(60%); /* Remove filter on hover to show original color */
+}
 .team-members{
-  font-size: 17px;
-  font-family: 'Ubuntu', sans-serif;
   margin-top: 1%;
   max-width: 26%;
   text-align: justify;
@@ -330,7 +317,7 @@ img.linkimg:hover {
 
 .my-contributions{
   margin-top: 1%;
-  padding-left: 20px;
+  
   text-align: justify;
   text-justify: inter-word;
   display: inline-block;
@@ -338,7 +325,7 @@ img.linkimg:hover {
 }
 
 .minor-contributions{
-  border-top: black 2px solid;
+  border-top: #2b2b2b 1px solid;
   padding-top: 30px;
 }
 
@@ -347,12 +334,21 @@ img.linkimg:hover {
   flex-wrap: wrap;
 }
 
+ul{
+  list-style: none;
+}
+
+li::before{
+  content: "➧ ";
+}
+
 .minor-game {
   flex: 1 1 30%; /* Adjust the percentage as needed */
   margin-top: 10px; /* Adjust the margin as needed */
   margin-right: 25px;
   margin-left: 25px;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 200;;
 }
 
 
@@ -360,7 +356,6 @@ img.linkimg:hover {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 20px;
-  background-color: #ededed;
 }
 
 .contact-me h2 {
@@ -368,7 +363,8 @@ img.linkimg:hover {
 }
 
 .contact-me p {
-  font-size: 18px;
+  font-size: 16px;
+
 }
 
 a:link {
@@ -416,6 +412,6 @@ a:active {
 
 .bottom-bar{
   text-align: center;
-  color: #533E85;
+  color: #9BCF96;
   padding-bottom: 20px;
 }
